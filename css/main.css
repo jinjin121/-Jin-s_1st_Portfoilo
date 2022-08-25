@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+@font-face {
+    font-family: 'Cafe24SsurroundAir';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cafe24Ssurround';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Cafe24SsurroundAir';
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    vertical-align: top;
+}
+
+.clear::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+/***초기화***/
+#wrap {
+    position: relative;
+}
+
+#header {
+    width: 800px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 300;
+}
+
+.gnb {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    display: flex;
+}
+
+.gnb>li {
+    margin-right: 40px;
+}
+
+.gnb>li>a {
+    font-size: 25px;
+    font-family: 'Cafe24Ssurround';
+}
+
+.gnb>li:hover>a {
+    color: #f0a105;
+}
+
+.gnb>li .sub {
+    width: 788px;
+    height: 0px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 45px;
+    left: -13px;
+    background-color: rgba(73, 13, 214, 0.521);
+    /* border-bottom: 1px solid #fff; */
+    color: white;
+    padding-left: 15px;
+    transition: all 0.5s;
+}
+
+.gnb>li:hover .sub {
+    height: 60px;
+    font-weight: 400;
+}
+
+.gnb>li .sub li {
+    margin: 0 20px;
+}
+
+.gnb>li .sub li:hover a {
+    color: #f0a105;
+}
+
+/***/
+#mainVisual {
+    position: relative;
+    background-color: #000;
+}
+
+#mainVisual .left img {
+    width: auto;
+    height: 100vh;
+}
+
+#mainVisual .center div {
+    position: absolute;
+    z-index: 200;
+    top: 30%;
+    left: 50%;
+}
+
+#mainVisual .center div ul {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#mainVisual .center div ul li {
+    color: white;
+    text-align: center;
+}
+
+#mainVisual .center div ul .tit {
+    font-family: 'Cafe24Ssurround';
+    font-size: 30px;
+    color: #f0a105;
+    margin-bottom: 10px;
+}
+
+#mainVisual .right ul {
+    position: absolute;
+    top: 200px;
+    right: 10%;
+}
+
+#mainVisual .right ul li {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#mainVisual .right div ul .tit {
+    font-family: 'Cafe24Ssurround';
+    font-size: 30px;
+    color: #f0a105;
+}
+
+#slider div img {
+    width: 100vw;
+    height: 100vh;
+}
