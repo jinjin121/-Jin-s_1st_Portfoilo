@@ -80,7 +80,7 @@ img {
 }
 
 .gnb>li .sub {
-    width: 788px;
+    width: 786px;
     height: 0px;
     overflow: hidden;
     display: flex;
@@ -88,7 +88,8 @@ img {
     position: absolute;
     top: 45px;
     left: -13px;
-    background-color: rgba(73, 13, 214, 0.521);
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid#fff;
     /* border-bottom: 1px solid #fff; */
     color: white;
     padding-left: 15px;
@@ -163,7 +164,12 @@ img {
     color: #f0a105;
 }
 
-#slider div img {
+#Graphic div img {
+    width: 100vw;
+    height: 100vh;
+}
+
+#Web div img {
     width: 100vw;
     height: 100vh;
 }
